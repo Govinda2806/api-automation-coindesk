@@ -23,5 +23,6 @@ public class CoinDeskApiTest {
         assertTrue(responseBody.contains("GBP"), "GBP currency not found");
         assertTrue(responseBody.contains("EUR"), "EUR currency not found");
         assertTrue(responseBody.contains("British Pound Sterling"), "GBP description incorrect");
+        
     }
 }
