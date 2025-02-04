@@ -16,6 +16,7 @@ public class CoinDeskApiTest {
         Response response = RestAssured.get("https://api.coindesk.com/v1/bpi/currentprice.json");
         System.out.println("response : "+response.getBody().asPrettyString());
         
+        
         assertEquals(200, response.getStatusCode(), "Expected HTTP status 200");
         assertTrue(response.getBody().asString().contains("bpi"), "'bpi' not found in response");
 
